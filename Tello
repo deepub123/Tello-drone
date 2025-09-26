@@ -1,0 +1,33 @@
+import socket
+import time
+
+# Tello IP and port
+TELLO_IP = '192.168.10.1'
+TELLO_PORT = 8889
+
+# Create UDP socket
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock.bind(('', TELLO_PORT))
+
+def send_command(command):
+    print(f"Sending: {command}")
+    sock.sendto(command.encode('utf-8'), (TELLO_IP, TELLO_PORT))
+    time.sleep(2)  # Wait for response or action
+
+# Start SDK mode
+send_command('command')
+
+# Take off
+send_command('takeoff')
+
+# Fly forward 50 cm
+send_command('forward 50')
+
+# Rotate clockwise 90 degrees
+send_command('cw 90')
+
+# Land
+send_command('land')
+
+# Close socket
+sock.close()
