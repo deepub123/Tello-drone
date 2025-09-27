@@ -18,11 +18,11 @@ This project is perfect for beginners who want to learn **drone programming and 
 ---
 
 ## Features
-- ✅ Connect and control DJI Tello via Wi-Fi  
-- ✅ Takeoff, land, and perform movements (forward, backward, left, right, rotate)  
-- ✅ Capture photos and videos with drone camera  
-- ✅ Real-time video streaming using OpenCV  
-- ✅ Record and analyze flight telemetry  
+-  Connect and control DJI Tello via Wi-Fi  
+- Takeoff, land, and perform movements (forward, backward, left, right, rotate)  
+- Capture photos and videos with drone camera  
+- Real-time video streaming using OpenCV  
+- Record and analyze flight telemetry  
 
 ---
 
@@ -32,7 +32,7 @@ This project is perfect for beginners who want to learn **drone programming and 
 |-----------------|--------------|
 | ![Drone Takeoff](https://via.placeholder.com/300x200.png?text=Takeoff) | ![Video Stream](https://via.placeholder.com/300x200.png?text=Video+Stream) |
 
-*(Replace the placeholder images with your own screenshots if available)*
+
 
 ---
 
